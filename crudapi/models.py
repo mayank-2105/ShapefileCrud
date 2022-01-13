@@ -5,6 +5,11 @@
 #   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
+
+
+
+#Here we have created the models for our countries shapefile
+
 from django.db import models
 
 
@@ -117,6 +122,7 @@ class DjangoSession(models.Model):
         managed = False
         db_table = 'django_session'
 
+#Run 'python manage.py inspectdb' create the models after connecting your legacy database to django
 
 class Ne110MAdmin0Countries(models.Model):
     ogc_fid = models.AutoField(primary_key=True)

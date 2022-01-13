@@ -77,6 +77,8 @@ WSGI_APPLICATION = 'postgrescrud.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+#To connect your postgresql Database with django add it's name user and password below
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
